@@ -17,7 +17,7 @@ class Hangman:
                 
                 while True:
                         
-                        guess=input("Enter a letter:") 
+                        guess=input("Enter a letter:").upper() 
                         find=False #find variable is using to understand if a letter found.
                         if len(guess)==1 and guess.isalpha()==True :
                                 self.turn_count+=1
@@ -73,7 +73,7 @@ class Hangman:
                                 
                                         
                                 print("Let's start guessing the letter:")
-                                self.word_to_find=str(input_word_to_find)
+                                self.word_to_find=str(input_word_to_find).upper()
                                 input_word_to_find=""
                                 break; return True
                                         
